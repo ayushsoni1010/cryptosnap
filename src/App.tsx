@@ -1,25 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import AssetCard from "./components/AssetsCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="trending-assets-header-wrapper mt-10 flex flex-col md:flex-row lg:flex-row justify-center items-center gap-3">
+        <img
+          className="w-14 md:w-10 lg:w-10"
+          src="https://ik.imagekit.io/ayushsoni1010/projects/activity_NyJA0E96n.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1669933295995"
+          alt="Trending Assets Icon"
+        />
+        <h1 className="text-center text-4xl text-secondary font-assets-tomorrow leading-[50px]">
+          Trending Assets Components
+        </h1>
+      </div>
+      <AssetCard />
+    </React.Fragment>
   );
 }
 
