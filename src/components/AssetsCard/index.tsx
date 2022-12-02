@@ -8,7 +8,7 @@ const AssetCard: React.FunctionComponent = () => {
   const assetDataRef = useRef(assetsData);
   return (
     <React.Fragment>
-      <div className="trending-assets-card-wrapper grid grid-cols-1 m-20 lg:m-28 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="trending-assets-card-wrapper grid grid-cols-1 m-12 mt-28 lg:m-28 gap-12 md:grid-cols-2 lg:grid-cols-3">
         {assetDataRef?.current?.map((item: AssetType, index: number) => {
           return (
             <div
